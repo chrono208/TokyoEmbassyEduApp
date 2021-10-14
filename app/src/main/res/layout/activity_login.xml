@@ -10,7 +10,8 @@
       android:id="@+id/imageView1"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      app:srcCompat="@drawable/educationusalogo" />
+      app:srcCompat="@drawable/educationusalogo"
+      />
 
   <TextView
       android:id="@+id/textView1"
@@ -19,18 +20,52 @@
       android:layout_below="@id/imageView1"
       android:layout_centerInParent="true"
       android:layout_marginTop="171dp"
-      android:text="This is where registration formatting will go." />
+      android:text="This is where login formatting will go." />
+
 
   <Button
-      android:id="@+id/hButton"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      android:id="@+id/regButton"
+      android:layout_width="110dp"
+      android:layout_height="88dp"
       android:layout_below="@id/textView1"
       android:layout_alignParentStart="true"
-      android:layout_centerVertical="true"
-      android:layout_marginStart="150dp"
-      android:layout_marginTop="130dp"
-      android:text="Home" />
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_centerInParent="true"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="213dp"
+      android:layout_marginEnd="282dp"
+      android:layout_marginBottom="8dp"
+      android:text="Register" />
 
+  <Button
+      android:id="@+id/cleButton"
+      android:layout_width="110dp"
+      android:layout_height="88dp"
+      android:layout_below="@id/textView1"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_centerInParent="true"
+      android:layout_marginStart="151dp"
+      android:layout_marginTop="213dp"
+      android:layout_marginEnd="151dp"
+      android:layout_marginBottom="8dp"
+      android:text="Clear" />
+
+  <Button
+      android:id="@+id/canButton"
+      android:layout_width="110dp"
+      android:layout_height="88dp"
+      android:layout_below="@id/textView1"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_centerInParent="true"
+      android:layout_marginStart="280dp"
+      android:layout_marginTop="213dp"
+      android:layout_marginEnd="21dp"
+      android:layout_marginBottom="8dp"
+      android:text="Cancel" />
 
 </RelativeLayout>

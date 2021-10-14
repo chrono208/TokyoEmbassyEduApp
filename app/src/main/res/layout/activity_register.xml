@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/educationusalogo"
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="171dp"
+        android:text="This is where registration formatting will go." />
+
+    <Button
+        android:id="@+id/sButton"
+        android:layout_width="147dp"
+        android:layout_height="88dp"
+        android:layout_below="@id/textView1"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="185dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/cButton"
+        android:layout_width="147dp"
+        android:layout_height="88dp"
+        android:layout_below="@id/textView1"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="186dp"
+        android:text="Cancel" />
+
+</RelativeLayout>
