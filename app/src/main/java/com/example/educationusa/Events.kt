@@ -30,5 +30,10 @@ class Events : AppCompatActivity() {
             val intent3 = Intent(this, Contacts::class.java)
             startActivity(intent3)
         }
-    }
-}
+
+
+
+    }//On Create
+
+
+}//Class
