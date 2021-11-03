@@ -1,6 +1,8 @@
+@file:Suppress("NAME_SHADOWING")
 package com.example.educationusa
-
+import android.media.Image
 import android.os.Bundle
+import android.provider.ContactsContract
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -18,135 +20,144 @@ class Events : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_events)
 
-        //Global Variables.
-        var tlist = ArrayList<String>()
-        var slist = ArrayList<String>()
-        var dslist = ArrayList<String>()
-        var delist = ArrayList<String>()
-        var eventTypelist = ArrayList<String>()
-        var eventOnlinelist = ArrayList<String>()
-        var locationlist = ArrayList<String>()
-        var countrylist = ArrayList<String>()
-        var singleDatelist = ArrayList<String>()
+        //Global valiables.
+        val tlist = ArrayList<String>()
+        val slist = ArrayList<String>()
+        val dslist = ArrayList<String>()
+        val delist = ArrayList<String>()
+        val eventTypelist = ArrayList<String>()
+        val eventOnlinelist = ArrayList<String>()
+        val locationlist = ArrayList<String>()
+        val countrylist = ArrayList<String>()
+        val singleDatelist = ArrayList<String>()
+        val imagelist = ArrayList<String>()
 
-        //Section1 Variables.
-        var title1 = findViewById<TextView>(R.id.title1)
-        var summary1 = findViewById<TextView>(R.id.summary1)
-        var startDate1 = findViewById<TextView>(R.id.startDate1)
-        var endDate1 = findViewById<TextView>(R.id.endDate1)
-        var eType1 = findViewById<TextView>(R.id.eType1)
-        var online1 = findViewById<TextView>(R.id.online1)
-        var country1 = findViewById<TextView>(R.id.country1)
-        var location1 = findViewById<TextView>(R.id.location1)
+        //Section1 valiables.
+        val banner = findViewById<ImageView>(R.id.banner1)
+        val title1 = findViewById<TextView>(R.id.title1)
+        val summary1 = findViewById<TextView>(R.id.summary1)
+        val startDate1 = findViewById<TextView>(R.id.startDate1)
+        val endDate1 = findViewById<TextView>(R.id.endDate1)
+        //val eType1 = findViewById<TextView>(R.id.eType1)
+        //val online1 = findViewById<TextView>(R.id.online1)
+        val country1 = findViewById<TextView>(R.id.country1)
+        val location1 = findViewById<TextView>(R.id.location1)
 
-        //Section 2 Variables
-        var title2 = findViewById<TextView>(R.id.title2)
-        var summary2 = findViewById<TextView>(R.id.summary2)
-        var startDate2 = findViewById<TextView>(R.id.startDate2)
-        var eType2 = findViewById<TextView>(R.id.eType2)
-        var online2 = findViewById<TextView>(R.id.online2)
-        var country2 = findViewById<TextView>(R.id.country2)
-        var location2 = findViewById<TextView>(R.id.location2)
+        //Section 2 valiables
+        val title2 = findViewById<TextView>(R.id.title2)
+        val summary2 = findViewById<TextView>(R.id.summary2)
+        val startDate2 = findViewById<TextView>(R.id.startDate2)
+        //val eType2 = findViewById<TextView>(R.id.eType2)
+        //val online2 = findViewById<TextView>(R.id.online2)
+        val country2 = findViewById<TextView>(R.id.country2)
+        val location2 = findViewById<TextView>(R.id.location2)
 
-        //Section 3 Variables
-        var title3 = findViewById<TextView>(R.id.title3)
-        var summary3 = findViewById<TextView>(R.id.summary3)
-        var startDate3 = findViewById<TextView>(R.id.startDate3)
-        var eType3 = findViewById<TextView>(R.id.eType3)
-        var online3 = findViewById<TextView>(R.id.online3)
-        var country3 = findViewById<TextView>(R.id.country3)
-        var location3 = findViewById<TextView>(R.id.location3)
+        //Section 3 valiables
+        val title3 = findViewById<TextView>(R.id.title3)
+        val summary3 = findViewById<TextView>(R.id.summary3)
+        val startDate3 = findViewById<TextView>(R.id.startDate3)
+        //val eType3 = findViewById<TextView>(R.id.eType3)
+        //val online3 = findViewById<TextView>(R.id.online3)
+        val country3 = findViewById<TextView>(R.id.country3)
+        val location3 = findViewById<TextView>(R.id.location3)
 
-        //Section 4 Variables
-        var title4 = findViewById<TextView>(R.id.title4)
-        var summary4 = findViewById<TextView>(R.id.summary4)
-        var startDate4 = findViewById<TextView>(R.id.startDate4)
-        var eType4 = findViewById<TextView>(R.id.eType4)
-        var online4 = findViewById<TextView>(R.id.online4)
-        var country4 = findViewById<TextView>(R.id.country4)
-        var location4 = findViewById<TextView>(R.id.location4)
-
-
-        //Section 5 Variables
-        var title5 = findViewById<TextView>(R.id.title5)
-        var summary5 = findViewById<TextView>(R.id.summary5)
-        var startDate5 = findViewById<TextView>(R.id.startDate5)
-        var eType5 = findViewById<TextView>(R.id.eType5)
-        var online5 = findViewById<TextView>(R.id.online5)
-        var country5 = findViewById<TextView>(R.id.country5)
-        var location5 = findViewById<TextView>(R.id.location5)
+        //Section 4 valiables
+        val title4 = findViewById<TextView>(R.id.title4)
+        val summary4 = findViewById<TextView>(R.id.summary4)
+        val startDate4 = findViewById<TextView>(R.id.startDate4)
+        //val eType4 = findViewById<TextView>(R.id.eType4)
+        //val online4 = findViewById<TextView>(R.id.online4)
+        val country4 = findViewById<TextView>(R.id.country4)
+        val location4 = findViewById<TextView>(R.id.location4)
 
 
-        //Section 6 Variables
-        var title6 = findViewById<TextView>(R.id.title6)
-        var summary6 = findViewById<TextView>(R.id.summary6)
-        var startDate6 = findViewById<TextView>(R.id.startDate6)
-        var eType6 = findViewById<TextView>(R.id.eType6)
-        var online6 = findViewById<TextView>(R.id.online6)
-        var country6 = findViewById<TextView>(R.id.country6)
-        var location6 = findViewById<TextView>(R.id.location6)
+        //Section 5 valiables
+        val title5 = findViewById<TextView>(R.id.title5)
+        val summary5 = findViewById<TextView>(R.id.summary5)
+        val startDate5 = findViewById<TextView>(R.id.startDate5)
+        //val eType5 = findViewById<TextView>(R.id.eType5)
+        //val online5 = findViewById<TextView>(R.id.online5)
+        val country5 = findViewById<TextView>(R.id.country5)
+        val location5 = findViewById<TextView>(R.id.location5)
 
 
-        //Section 7 Variables
-        var title7 = findViewById<TextView>(R.id.title7)
-        var summary7 = findViewById<TextView>(R.id.summary7)
-        var startDate7 = findViewById<TextView>(R.id.startDate7)
-        var eType7 = findViewById<TextView>(R.id.eType7)
-        var online7 = findViewById<TextView>(R.id.online7)
-        var country7 = findViewById<TextView>(R.id.country7)
-        var location7 = findViewById<TextView>(R.id.location7)
+        //Section 6 valiables
+        val title6 = findViewById<TextView>(R.id.title6)
+        val summary6 = findViewById<TextView>(R.id.summary6)
+        val startDate6 = findViewById<TextView>(R.id.startDate6)
+        //val eType6 = findViewById<TextView>(R.id.eType6)
+        //val online6 = findViewById<TextView>(R.id.online6)
+        val country6 = findViewById<TextView>(R.id.country6)
+        val location6 = findViewById<TextView>(R.id.location6)
 
 
-        //Section 8 Variables
-        var title8 = findViewById<TextView>(R.id.title8)
-        var summary8 = findViewById<TextView>(R.id.summary8)
-        var startDate8 = findViewById<TextView>(R.id.startDate8)
-        var eType8 = findViewById<TextView>(R.id.eType8)
-        var online8 = findViewById<TextView>(R.id.online8)
-        var country8 = findViewById<TextView>(R.id.country8)
-        var location8 = findViewById<TextView>(R.id.location8)
+        //Section 7 valiables
+        val title7 = findViewById<TextView>(R.id.title7)
+        val summary7 = findViewById<TextView>(R.id.summary7)
+        val startDate7 = findViewById<TextView>(R.id.startDate7)
+        //val eType7 = findViewById<TextView>(R.id.eType7)
+        //val online7 = findViewById<TextView>(R.id.online7)
+        val country7 = findViewById<TextView>(R.id.country7)
+        val location7 = findViewById<TextView>(R.id.location7)
 
 
-        //Section 9 Variables
-        var title9 = findViewById<TextView>(R.id.title9)
-        var summary9 = findViewById<TextView>(R.id.summary9)
-        var startDate9 = findViewById<TextView>(R.id.startDate9)
-        var eType9 = findViewById<TextView>(R.id.eType9)
-        var online9 = findViewById<TextView>(R.id.online9)
-        var country9 = findViewById<TextView>(R.id.country9)
-        var location9 = findViewById<TextView>(R.id.location9)
+        //Section 8 valiables
+        val title8 = findViewById<TextView>(R.id.title8)
+        val summary8 = findViewById<TextView>(R.id.summary8)
+        val startDate8 = findViewById<TextView>(R.id.startDate8)
+        //val eType8 = findViewById<TextView>(R.id.eType8)
+        //val online8 = findViewById<TextView>(R.id.online8)
+        val country8 = findViewById<TextView>(R.id.country8)
+        val location8 = findViewById<TextView>(R.id.location8)
 
 
-        //Section 10 Variables
-        var title10 = findViewById<TextView>(R.id.title10)
-        var summary10 = findViewById<TextView>(R.id.summary10)
-        var startDate10 = findViewById<TextView>(R.id.startDate10)
-        var eType10 = findViewById<TextView>(R.id.eType10)
-        var online10 = findViewById<TextView>(R.id.online10)
-        var country10 = findViewById<TextView>(R.id.country10)
-        var location10 = findViewById<TextView>(R.id.location10)
+        //Section 9 valiables
+        val title9 = findViewById<TextView>(R.id.title9)
+        val summary9 = findViewById<TextView>(R.id.summary9)
+        val startDate9 = findViewById<TextView>(R.id.startDate9)
+        //val eType9 = findViewById<TextView>(R.id.eType9)
+        //val online9 = findViewById<TextView>(R.id.online9)
+        val country9 = findViewById<TextView>(R.id.country9)
+        val location9 = findViewById<TextView>(R.id.location9)
+
+
+        //Section 10 valiables
+        val title10 = findViewById<TextView>(R.id.title10)
+        val summary10 = findViewById<TextView>(R.id.summary10)
+        val startDate10 = findViewById<TextView>(R.id.startDate10)
+        //val eType10 = findViewById<TextView>(R.id.eType10)
+        //val online10 = findViewById<TextView>(R.id.online10)
+        val country10 = findViewById<TextView>(R.id.country10)
+        val location10 = findViewById<TextView>(R.id.location10)
 
         //Core Functionality.
         doAsync {
             //Containers to search for.
-            var doc = Jsoup.connect("https://educationusa.state.gov/find-event/").get()
-            var allinfo = doc.getElementsByClass("views-field views-field-title")
-            var sums = doc.getElementsByClass("views-field views-field-field-summary")
-            var dates = doc.getElementsByClass("field-event-date")
-            var eventType = doc.getElementsByClass("views-row views-row-1 views-row-odd views-row-first")
-            var singleDate = doc.getElementsByClass("date-display-single")
-            var location = doc.getElementsByClass("views-field views-field-field-event-in-person-location-country")
+            val doc = Jsoup.connect("https://educationusa.state.gov/find-event/").get()
+            val allinfo = doc.getElementsByClass("views-field views-field-title")
+            val sums = doc.getElementsByClass("views-field views-field-field-summary")
+            val dates = doc.getElementsByClass("field-event-date")
+            //val eventType = doc.getElementsByClass("views-row views-row-1 views-row-odd views-row-first")
+            val singleDate = doc.getElementsByClass("date-display-single")
+            val location = doc.getElementsByClass("views-field views-field-field-event-in-person-location-country")
+            val banners = doc.getElementsByClass("panel-pane pane-fieldable-panels-pane pane-fpid-219")
 
             //Allinfo loop, contains nested for loops.
             for(i in allinfo){
-                var eTitle = i.getElementsByClass("field-content")
+                val eTitle = i.getElementsByClass("field-content")
                     .select("h3")
                     .text()
                 tlist.add(eTitle)
 
+                //Image banner.
+                for(i in banners) {
+                    val image = i.getElementsByTag("img").attr("src")
+                    imagelist.add(image)
+                }//Allinfo.
+
                 //Sums loop
                 for(j in sums) {
-                    var eSums = j.getElementsByClass("field-content")
+                    val eSums = j.getElementsByClass("field-content")
                         .select("p")
                         .text()
                     slist.add(eSums)
@@ -154,10 +165,10 @@ class Events : AppCompatActivity() {
 
                 //Dates loop
                 for(k in dates) {
-                    var eDatesS = k.getElementsByClass("date-display-start")
+                    val eDatesS = k.getElementsByClass("date-display-start")
                         .select("span")
                         .text()
-                    var eDatesE = k.getElementsByClass("date-display-end")
+                    val eDatesE = k.getElementsByClass("date-display-end")
                         .select("span")
                         .text()
                     dslist.add(eDatesS)
@@ -166,17 +177,17 @@ class Events : AppCompatActivity() {
 
                 //Single Dates loop
                 for(k in singleDate) {
-                    var eDatesS = k.getElementsByClass("date-display-single")
+                    val eDatesS = k.getElementsByClass("date-display-single")
                         .text()
                     singleDatelist.add(eDatesS)
                 }//Dates.
 
                 //Location loop
                 for(k in location) {
-                    var elocation = k.getElementsByClass("views-label views-label-field-event-in-person-location-country")
+                    val elocation = k.getElementsByClass("views-label views-label-field-event-in-person-location-country")
                         .select("span")
                         .text()
-                    var ecountry = k.getElementsByClass("field-content")
+                    val ecountry = k.getElementsByClass("field-content")
                         .select("span")
                         .text()
                     locationlist.add(elocation)
@@ -185,10 +196,10 @@ class Events : AppCompatActivity() {
 
                 //Event Type loop
                 for(k in location) {
-                    var eType = k.getElementsByClass("div")
+                    val eType = k.getElementsByClass("div")
                         .select("span")
                         .text()
-                    var eOnline = k.getElementsByClass("div")
+                    val eOnline = k.getElementsByClass("div")
                         .select("span")
                         .text()
                     eventTypelist.add(eType)
@@ -199,6 +210,9 @@ class Events : AppCompatActivity() {
 
 
             uiThread {
+
+                //Banner
+                Glide.with(this@Events).load(imagelist[0]).into(banner)
 
                 //Panel 1.
                 title1.text=tlist[0]

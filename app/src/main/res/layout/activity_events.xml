@@ -23,13 +23,20 @@
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="24dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="1"
                 android:fontFamily="@font/amiko"
                 android:text="Upcoming Events"
                 android:textColor="#E5F1D7"
                 android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/banner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:srcCompat="@tools:sample/avatars" />
 
             <!--Section 1.-->
             <LinearLayout

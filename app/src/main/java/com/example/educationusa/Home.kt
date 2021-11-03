@@ -1,8 +1,11 @@
 package com.example.educationusa
 
+import android.animation.Animator
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import com.bumptech.glide.Glide
@@ -10,22 +13,26 @@ import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.uiThread
 import org.jsoup.Jsoup
 
+    private val handlerAnimation = Handler()
+    private val statusAnimation = false
+
 class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        //Global Variables.
-        var imagelist = ArrayList<String>()
-        var image1 = findViewById<ImageView>(R.id.image1)
+        //Global valiables.
+        val imagelist = ArrayList<String>()
+        val image1 = findViewById<ImageView>(R.id.image1)
+
 
         doAsync {
-            var doc = Jsoup.connect("https://educationusa.state.gov/find-event/").get()
-            var allinfo = doc.getElementsByClass("panel-pane pane-fieldable-panels-pane pane-fpid-219")
+            val doc = Jsoup.connect("https://educationusa.state.gov/find-event/").get()
+            val allinfo = doc.getElementsByClass("panel-pane pane-fieldable-panels-pane pane-fpid-219")
 
             //Allinfo loop, contains nested for loops.
             for(i in allinfo) {
-                var image = i.getElementsByTag("img").attr("src")
+                val image = i.getElementsByTag("img").attr("src")
                 imagelist.add(image)
             }//Allinfo.
             uiThread {
