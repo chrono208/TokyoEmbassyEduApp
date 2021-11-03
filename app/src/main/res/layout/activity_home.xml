@@ -13,51 +13,53 @@
         app:srcCompat="@drawable/educationusalogo"
         />
 
-    <TextView
-        android:id="@+id/textView"
+    <ImageView
+        android:id="@+id/image1"
         android:layout_width="258dp"
         android:layout_height="236dp"
-        android:fontFamily="@font/amiko"
-        android:text="Welcome to the home page."
+        android:layout_below="@id/imageView"
+        android:layout_centerInParent="true"
         android:textAlignment="center"
         android:textColor="#003865"
-        android:textSize="34sp"
-        android:layout_below="@id/imageView"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        />
+        android:textSize="34sp" />
 
     <Button
         android:id="@+id/eveButton"
         android:layout_width="147dp"
         android:layout_height="88dp"
-        android:layout_below="@id/textView"
+        android:layout_below="@id/image1"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:layout_marginStart="47dp"
         android:layout_marginTop="9dp"
+        android:background="#002D74"
+        android:textColor="@color/white"
         android:text="Events" />
 
     <Button
         android:id="@+id/faqButton"
         android:layout_width="147dp"
         android:layout_height="88dp"
-        android:layout_below="@id/textView"
+        android:layout_below="@id/image1"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:layout_marginStart="232dp"
         android:layout_marginTop="9dp"
+        android:background="#002D74"
+        android:textColor="@color/white"
         android:text="FAQ" />
 
     <Button
         android:id="@+id/conButton"
         android:layout_width="147dp"
         android:layout_height="88dp"
-        android:layout_below="@id/textView"
+        android:layout_below="@id/image1"
         android:layout_alignParentEnd="true"
         android:layout_centerInParent="true"
         android:layout_marginTop="112dp"
         android:layout_marginEnd="131dp"
+        android:background="#002D74"
+        android:textColor="@color/white"
         android:text="Contacts" />
 
 

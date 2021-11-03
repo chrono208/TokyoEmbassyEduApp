@@ -59,54 +59,98 @@
                     app:cardBackgroundColor="#ECDDDD">
 
                     <TextView
-                        android:id="@+id/dtex"
+                        android:id="@+id/title1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center|top"
                         android:gravity="center_horizontal"
                         android:padding="@dimen/cardview_compat_inset_shadow"
-                        android:text="Hello World!" />
+                        android:text="Title" />
 
                     <TextView
-                        android:id="@+id/dtex6"
+                        android:id="@+id/startDate1"
                         android:layout_width="185dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
-                        android:layout_below="@id/dtex"
-                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/title1"
+                        android:layout_marginTop="20dp"
                         android:gravity="center"
                         android:padding="@dimen/cardview_compat_inset_shadow"
-                        android:text="Hello World!" />
+                        android:text="Date" />
 
                     <TextView
-                        android:id="@+id/dtex7"
+                        android:id="@+id/eType1"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Event type" />
+
+                    <TextView
+                        android:id="@+id/location1"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Location:" />
+
+                    <TextView
+                        android:id="@+id/to1"
                         android:layout_width="20dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center|top"
-                        android:layout_below="@id/dtex"
-                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/title1"
+                        android:layout_marginTop="20dp"
                         android:gravity="center"
                         android:padding="@dimen/cardview_compat_inset_shadow"
                         android:text="To" />
 
                     <TextView
-                        android:id="@+id/dtex8"
+                        android:id="@+id/online1"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="40dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Online Event" />
+
+                    <TextView
+                        android:id="@+id/country1"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="60dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Country" />
+
+                    <TextView
+                        android:id="@+id/endDate1"
                         android:layout_width="185dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="20dp"
                         android:gravity="center"
                         android:padding="@dimen/cardview_compat_inset_shadow"
-                        android:text="Hello World!" />
+                        android:text="Date" />
 
                     <TextView
-                        android:id="@+id/dtex5"
+                        android:id="@+id/summary1"
                         android:layout_width="match_parent"
                         android:layout_height="85dp"
                         android:layout_gravity="bottom"
                         android:gravity="center_horizontal"
                         android:padding="@dimen/cardview_compat_inset_shadow"
-                        android:text="Hello World!" />
+                        android:text="Summary" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
 
@@ -137,14 +181,81 @@
                     app:cardBackgroundColor="#ECDDDD">
 
                     <TextView
-                        android:id="@+id/dtex2"
-                        android:layout_width="match_parent"
-                        android:layout_height="58dp"
-                        android:layout_gravity="top"
+                        android:id="@+id/title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
                         android:gravity="center_horizontal"
                         android:padding="@dimen/cardview_compat_inset_shadow"
-                        android:text="Hello World!" />
+                        android:text="Title" />
+
+
+                    <TextView
+                        android:id="@+id/startDate2"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_below="@id/title1"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Date" />
+
+                    <TextView
+                        android:id="@+id/eType2"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Event type" />
+
+                    <TextView
+                        android:id="@+id/location2"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Location:" />
+
+                    <TextView
+                        android:id="@+id/summary2"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Summary" />
+
+                    <TextView
+                        android:id="@+id/online2"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="40dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Online Event" />
+
+                    <TextView
+                        android:id="@+id/country2"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="60dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Country" />
                 </androidx.cardview.widget.CardView>
+
+
             </LinearLayout>
 
             <!--Section 3.-->
@@ -174,15 +285,82 @@
                     app:cardBackgroundColor="#ECDDDD">
 
                     <TextView
-                        android:id="@+id/dtex3"
-                        android:layout_width="236dp"
-                        android:layout_height="104dp"
-                        android:layout_gravity="center"
+                        android:id="@+id/title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
                         android:gravity="center_horizontal"
                         android:padding="@dimen/cardview_compat_inset_shadow"
-                        android:text="Hello World!" />
+                        android:text="Title" />
+
+
+                    <TextView
+                        android:id="@+id/startDate3"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_below="@id/title1"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Date" />
+
+                    <TextView
+                        android:id="@+id/eType3"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Event type" />
+
+                    <TextView
+                        android:id="@+id/location3"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Location:" />
+
+                    <TextView
+                        android:id="@+id/summary3"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Summary" />
+
+                    <TextView
+                        android:id="@+id/online3"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="40dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Online Event" />
+
+                    <TextView
+                        android:id="@+id/country3"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="60dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Country" />
+
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
+
 
             <!--Section 4.-->
             <LinearLayout
@@ -211,16 +389,710 @@
                     app:cardBackgroundColor="#ECDDDD">
 
                     <TextView
-                        android:id="@+id/dtex4"
-                        android:layout_width="236dp"
-                        android:layout_height="104dp"
-                        android:layout_gravity="center"
+                        android:id="@+id/title4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
                         android:gravity="center_horizontal"
                         android:padding="@dimen/cardview_compat_inset_shadow"
-                        android:text="Hello World!" />
+                        android:text="Title" />
+
+
+                    <TextView
+                        android:id="@+id/startDate4"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_below="@id/title1"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Date" />
+
+                    <TextView
+                        android:id="@+id/eType4"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Event type" />
+
+                    <TextView
+                        android:id="@+id/location4"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Location:" />
+
+                    <TextView
+                        android:id="@+id/summary4"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Summary" />
+
+                    <TextView
+                        android:id="@+id/online4"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="40dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Online Event" />
+
+                    <TextView
+                        android:id="@+id/country4"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="60dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Country" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+            <!--Section 5.-->
+            <LinearLayout
+                android:id="@+id/sec5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="20dp"
+                    android:layout_height="180dp"
+                    android:elevation="30dp"
+                    app:cardBackgroundColor="#6E6969">
+
+                    <ImageView
+                        android:id="@+id/im5"
+                        android:layout_width="20dp"
+                        android:layout_height="180dp"
+                        android:scaleType="centerCrop"
+                        tools:srcCompat="@tools:sample/avatars" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="390dp"
+                    android:layout_height="180dp"
+                    app:cardBackgroundColor="#ECDDDD">
+
+                    <TextView
+                        android:id="@+id/title5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Title" />
+
+
+                    <TextView
+                        android:id="@+id/startDate5"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_below="@id/title1"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Date" />
+
+                    <TextView
+                        android:id="@+id/eType5"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Event type" />
+
+                    <TextView
+                        android:id="@+id/location5"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Location:" />
+
+                    <TextView
+                        android:id="@+id/summary5"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Summary" />
+
+                    <TextView
+                        android:id="@+id/online5"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="40dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Online Event" />
+
+                    <TextView
+                        android:id="@+id/country5"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="60dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Country" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+            <!--Section 6.-->
+            <LinearLayout
+                android:id="@+id/sec6"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="20dp"
+                    android:layout_height="180dp"
+                    android:elevation="30dp"
+                    app:cardBackgroundColor="#6E6969">
+
+                    <ImageView
+                        android:id="@+id/im6"
+                        android:layout_width="20dp"
+                        android:layout_height="180dp"
+                        android:scaleType="centerCrop"
+                        tools:srcCompat="@tools:sample/avatars" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="390dp"
+                    android:layout_height="180dp"
+                    app:cardBackgroundColor="#ECDDDD">
+
+                    <TextView
+                        android:id="@+id/title6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Title" />
+
+
+                    <TextView
+                        android:id="@+id/startDate6"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_below="@id/title1"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Date" />
+
+                    <TextView
+                        android:id="@+id/eType6"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Event type" />
+
+                    <TextView
+                        android:id="@+id/location6"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Location:" />
+
+                    <TextView
+                        android:id="@+id/summary6"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Summary" />
+
+                    <TextView
+                        android:id="@+id/online6"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="40dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Online Event" />
+
+                    <TextView
+                        android:id="@+id/country6"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="60dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Country" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+
+            <!--Section 7.-->
+            <LinearLayout
+                android:id="@+id/sec7"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="20dp"
+                    android:layout_height="180dp"
+                    android:elevation="30dp"
+                    app:cardBackgroundColor="#6E6969">
+
+                    <ImageView
+                        android:id="@+id/im7"
+                        android:layout_width="20dp"
+                        android:layout_height="180dp"
+                        android:scaleType="centerCrop"
+                        tools:srcCompat="@tools:sample/avatars" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="390dp"
+                    android:layout_height="180dp"
+                    app:cardBackgroundColor="#ECDDDD">
+
+                    <TextView
+                        android:id="@+id/title7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Title" />
+
+
+                    <TextView
+                        android:id="@+id/startDate7"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_below="@id/title1"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Date" />
+
+                    <TextView
+                        android:id="@+id/eType7"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Event type" />
+
+                    <TextView
+                        android:id="@+id/location7"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Location:" />
+
+                    <TextView
+                        android:id="@+id/summary7"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Summary" />
+
+                    <TextView
+                        android:id="@+id/online7"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="40dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Online Event" />
+
+                    <TextView
+                        android:id="@+id/country7"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="60dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Country" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+            <!--Section 8.-->
+            <LinearLayout
+                android:id="@+id/sec8"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="20dp"
+                    android:layout_height="180dp"
+                    android:elevation="30dp"
+                    app:cardBackgroundColor="#6E6969">
+
+                    <ImageView
+                        android:id="@+id/im8"
+                        android:layout_width="20dp"
+                        android:layout_height="180dp"
+                        android:scaleType="centerCrop"
+                        tools:srcCompat="@tools:sample/avatars" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="390dp"
+                    android:layout_height="180dp"
+                    app:cardBackgroundColor="#ECDDDD">
+
+                    <TextView
+                        android:id="@+id/title8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Title" />
+
+
+                    <TextView
+                        android:id="@+id/startDate8"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_below="@id/title1"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Date" />
+
+                    <TextView
+                        android:id="@+id/eType8"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Event type" />
+
+                    <TextView
+                        android:id="@+id/location8"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Location:" />
+
+                    <TextView
+                        android:id="@+id/summary8"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Summary" />
+
+                    <TextView
+                        android:id="@+id/online8"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="40dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Online Event" />
+
+                    <TextView
+                        android:id="@+id/country8"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="60dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Country" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <!--Section 9.-->
+            <LinearLayout
+                android:id="@+id/sec9"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="20dp"
+                    android:layout_height="180dp"
+                    android:elevation="30dp"
+                    app:cardBackgroundColor="#6E6969">
+
+                    <ImageView
+                        android:id="@+id/im9"
+                        android:layout_width="20dp"
+                        android:layout_height="180dp"
+                        android:scaleType="centerCrop"
+                        tools:srcCompat="@tools:sample/avatars" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="390dp"
+                    android:layout_height="180dp"
+                    app:cardBackgroundColor="#ECDDDD">
+
+                    <TextView
+                        android:id="@+id/title9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Title" />
+
+
+                    <TextView
+                        android:id="@+id/startDate9"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_below="@id/title1"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Date" />
+
+                    <TextView
+                        android:id="@+id/eType9"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Event type" />
+
+                    <TextView
+                        android:id="@+id/location9"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Location:" />
+
+                    <TextView
+                        android:id="@+id/summary9"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Summary" />
+
+                    <TextView
+                        android:id="@+id/online9"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="40dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Online Event" />
+
+                    <TextView
+                        android:id="@+id/country9"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="60dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Country" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <!--Section 10.-->
+            <LinearLayout
+                android:id="@+id/sec10"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="20dp"
+                    android:layout_height="180dp"
+                    android:elevation="30dp"
+                    app:cardBackgroundColor="#6E6969">
+
+                    <ImageView
+                        android:id="@+id/im10"
+                        android:layout_width="20dp"
+                        android:layout_height="180dp"
+                        android:scaleType="centerCrop"
+                        tools:srcCompat="@tools:sample/avatars" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="390dp"
+                    android:layout_height="180dp"
+                    app:cardBackgroundColor="#ECDDDD">
+
+                    <TextView
+                        android:id="@+id/title10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Title" />
+
+
+                    <TextView
+                        android:id="@+id/startDate10"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_below="@id/title1"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Date" />
+
+                    <TextView
+                        android:id="@+id/eType10"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Event type" />
+
+                    <TextView
+                        android:id="@+id/location10"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Location:" />
+
+                    <TextView
+                        android:id="@+id/summary10"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Summary" />
+
+                    <TextView
+                        android:id="@+id/online10"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="40dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Online Event" />
+
+                    <TextView
+                        android:id="@+id/country10"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="60dp"
+                        android:gravity="left"
+                        android:padding="@dimen/cardview_compat_inset_shadow"
+                        android:text="Country" />
+
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
 </RelativeLayout>

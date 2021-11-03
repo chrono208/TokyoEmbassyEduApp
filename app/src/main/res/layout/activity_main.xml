@@ -36,6 +36,8 @@
         android:layout_centerVertical="true"
         android:layout_marginStart="47dp"
         android:layout_marginTop="9dp"
+        android:background="#002D74"
+        android:textColor="@color/white"
         android:text="Login" />
 
     <Button
@@ -47,6 +49,8 @@
         android:layout_centerVertical="true"
         android:layout_marginStart="232dp"
         android:layout_marginTop="9dp"
+        android:background="#002D74"
+        android:textColor="@color/white"
         android:text="Register" />
 
     <Button
@@ -58,6 +62,8 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="112dp"
         android:layout_marginEnd="131dp"
+        android:background="#002D74"
+        android:textColor="@color/white"
         android:text="Guest" />
 
 
