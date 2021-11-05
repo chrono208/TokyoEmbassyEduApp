@@ -6,6 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+  <EditText
+      android:id="@+id/user5"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="343dp"
+      android:hint="Email"
+      android:minHeight="48dp" />
+
+  <EditText
+      android:id="@+id/user6"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="-1dp"
+      android:layout_marginBottom="283dp"
+      android:inputType="textPassword"
+      android:hint="Password"
+      android:minHeight="48dp" />
+
   <ImageView
       android:id="@+id/imageView1"
       android:layout_width="wrap_content"
@@ -13,15 +35,18 @@
       app:srcCompat="@drawable/educationusalogo"
       />
 
+
   <TextView
       android:id="@+id/textView1"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_below="@id/imageView1"
+      android:layout_alignParentStart="true"
       android:layout_centerInParent="true"
-      android:layout_marginTop="171dp"
-      android:text="This is where login formatting will go." />
-
+      android:layout_marginStart="163dp"
+      android:layout_marginTop="20dp"
+      android:text="Login"
+      android:textSize="34sp" />
 
   <Button
       android:id="@+id/regButton"
@@ -33,12 +58,12 @@
       android:layout_alignParentBottom="true"
       android:layout_centerInParent="true"
       android:layout_marginStart="20dp"
-      android:layout_marginTop="213dp"
+      android:layout_marginTop="310dp"
       android:layout_marginEnd="282dp"
       android:layout_marginBottom="8dp"
       android:background="@drawable/button_normal"
-      android:textColor="@color/white"
-      android:text="Register" />
+      android:text="Login"
+      android:textColor="@color/white" />
 
   <Button
       android:id="@+id/cleButton"
@@ -50,7 +75,7 @@
       android:layout_alignParentBottom="true"
       android:layout_centerInParent="true"
       android:layout_marginStart="151dp"
-      android:layout_marginTop="213dp"
+      android:layout_marginTop="310dp"
       android:layout_marginEnd="151dp"
       android:layout_marginBottom="8dp"
       android:background="@drawable/button_normal"
@@ -67,7 +92,7 @@
       android:layout_alignParentBottom="true"
       android:layout_centerInParent="true"
       android:layout_marginStart="280dp"
-      android:layout_marginTop="213dp"
+      android:layout_marginTop="310dp"
       android:layout_marginEnd="21dp"
       android:layout_marginBottom="8dp"
       android:background="@drawable/button_normal"

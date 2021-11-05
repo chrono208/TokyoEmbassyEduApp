@@ -22,6 +22,8 @@ class FAQ : AppCompatActivity() {
         val title1 = findViewById<TextView>(R.id.title1)
         val question1 = findViewById<TextView>(R.id.question1)
         val answer1 = findViewById<TextView>(R.id.answer1)
+        val question2 = findViewById<TextView>(R.id.question2)
+        val answer2 = findViewById<TextView>(R.id.answer2)
 
         doAsync {
             //Containers to search for.
@@ -61,6 +63,8 @@ class FAQ : AppCompatActivity() {
                 title1.text=titleList[0]
                 question1.text=questionList[0]
                 answer1.text=answerList[0]
+                //question2.text=questionList[1]
+                //answer2.text=answerList[1]
             }//UiThread.
         }//Async.
 

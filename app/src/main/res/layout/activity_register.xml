@@ -19,33 +19,79 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView1"
         android:layout_centerInParent="true"
-        android:layout_marginTop="171dp"
-        android:text="This is where registration formatting will go." />
+        android:layout_marginTop="16dp"
+        android:text="Register."
+        android:textSize="34sp" />
+
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="395dp"
+        android:hint="Username"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/user4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="343dp"
+        android:hint="Email"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/user2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="283dp"
+        android:hint="Password"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/user3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="226dp"
+        android:hint="Re-enter Password"
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/sButton"
         android:layout_width="147dp"
-        android:layout_height="88dp"
+        android:layout_height="100dp"
         android:layout_below="@id/textView1"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="246dp"
-        android:layout_marginTop="185dp"
+        android:layout_marginStart="239dp"
+        android:layout_marginTop="315dp"
         android:background="@drawable/button_normal"
-        android:textColor="@color/white"
-        android:text="Submit" />
+        android:text="Submit"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/cButton"
         android:layout_width="147dp"
-        android:layout_height="88dp"
+        android:layout_height="100dp"
         android:layout_below="@id/textView1"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="186dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="315dp"
         android:background="@drawable/button_normal"
-        android:textColor="@color/white"
-        android:text="Cancel" />
+        android:text="Cancel"
+        android:textColor="@color/white" />
 
 </RelativeLayout>
