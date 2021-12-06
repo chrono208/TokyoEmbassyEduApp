@@ -4,75 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".Contacts">
 
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/educationusalogo"
-        />
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/imageView1"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="171dp"
-        android:text="This is where contact formatting will go." />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/educationusalogo" />
 
+        <LinearLayout
+            android:id="@+id/sec1"
+            android:layout_width="match_parent"
+            android:layout_height="325dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/hButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textView1"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="202dp"
-        android:layout_marginEnd="282dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/button_normal"
-        android:textColor="@color/white"
-        android:text="Home" />
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:text="This is where contact formatting will go." />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/eveButton"
-        android:layout_width="wrap_content"
-        android:layout_height="84dp"
-        android:layout_below="@id/textView1"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="151dp"
-        android:layout_marginTop="201dp"
-        android:layout_marginEnd="150dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/button_normal"
-        android:textColor="@color/white"
-        android:text="Events" />
+        <LinearLayout
+            android:id="@+id/sec2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/faqButton"
-        android:layout_width="wrap_content"
-        android:layout_height="85dp"
-        android:layout_below="@id/textView1"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="280dp"
-        android:layout_marginTop="201dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/button_normal"
-        android:textColor="@color/white"
-        android:text="FAQ" />
+            <Button
+                android:id="@+id/hButton"
+                android:layout_width="100dp"
+                android:layout_height="88dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/button_normal"
+                android:text="Home"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/eveButton"
+                android:layout_width="100dp"
+                android:layout_height="88dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/button_normal"
+                android:text="Events"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/faqButton"
+                android:layout_width="100dp"
+                android:layout_height="88dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/button_normal"
+                android:text="FAQ"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
