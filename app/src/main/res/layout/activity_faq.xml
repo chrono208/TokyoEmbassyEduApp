@@ -6,148 +6,231 @@
     android:layout_height="match_parent"
     tools:context=".FAQ">
 
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/educationusalogo" />
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/sec1"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:elevation="30dp">
-
-                <TextView
-                    android:id="@+id/title1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Title" />
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/sec2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical" >
 
-            <androidx.cardview.widget.CardView
+            <Button
+                android:id="@+id/profileBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:text="👤"/>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/question1"
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    app:srcCompat="@drawable/educationusalogo" />
+
+                <LinearLayout
+                    android:id="@+id/sec1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:elevation="30dp">
+
+                        <TextView
+                            android:id="@+id/title1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Title" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sec2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/question1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Q: There are so many schools in the U.S. How do I decide which schools to apply to?" />
+
+                        <TextView
+                            android:id="@+id/answer1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="40dp"
+                            android:text="A: Research your options and define your priorities. Contact the EducationUSA advising center nearest you and browse college search engines online. Check to see if the schools your are considering are accredited." />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sec3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/question2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Q: What’s the difference between a college and a university?" />
+
+                        <TextView
+                            android:id="@+id/answer2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="25dp"
+                            android:text="A: Colleges offer only undergraduate degrees while universities offer graduate degrees as well, but the terms are often used interchangeably." />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sec4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/question3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Q: Are there age limitations to attend U.S. universities?" />
+
+                        <TextView
+                            android:id="@+id/answer3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="20dp"
+                            android:text="A: In general, you must have completed high school and you must be at least 17 years of age." />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sec5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/question4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Q: What is the academic calendar for universities in the United States?" />
+
+                        <TextView
+                            android:id="@+id/answer4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="35dp"
+                            android:text="A: The academic year usually runs from August through May with breaks for holidays. Most universities use either the semester system (two terms), the quarter system (students attend three out of four total terms), or the trimester system (three terms)." />
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sec6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/question5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Q: What is the difference between &quot;Undergraduate&quot; and &quot;Graduate&quot; degrees?" />
+
+                        <TextView
+                            android:id="@+id/answer5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="40dp"
+                            android:text="A: Undergraduate programs follow high school and lead to an associate (two-year) degree or a bachelor (four-year) degree. Graduate programs follow a bachelor’s degree and lead to a master’s or doctoral degree." />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/buttonSec"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Question1" />
-
-                <TextView
-                    android:id="@+id/answer1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginTop="45dp"
-                    android:text="Answer1" />
-
-                <TextView
-                    android:id="@+id/question2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="110dp"
-                    android:text="" />
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/answer2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="140dp"
-                    android:text="" />
+                    <Button
+                        android:id="@+id/hButton"
+                        android:layout_width="100dp"
+                        android:layout_height="88dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="9dp"
+                        android:background="@drawable/button_normal"
+                        android:text="Home"
+                        android:textColor="@color/white" />
 
-            </androidx.cardview.widget.CardView>
+                    <Button
+                        android:id="@+id/eveButton"
+                        android:layout_width="100dp"
+                        android:layout_height="88dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="9dp"
+                        android:background="@drawable/button_normal"
+                        android:text="Events"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/conButton"
+                        android:layout_width="100dp"
+                        android:layout_height="88dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="9dp"
+                        android:background="@drawable/button_normal"
+                        android:text="Contacts"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/sec3"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:layout_marginTop="180dp"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <Button
-                    android:id="@+id/eveButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="89dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="158dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:layout_marginBottom="0dp"
-                    android:background="@drawable/button_normal"
-                    android:text="Events"
-                    android:textColor="@color/white" />
-
-                <Button
-                    android:id="@+id/hButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="89dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="282dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/button_normal"
-                    android:text="Home"
-                    android:textColor="@color/white" />
-
-                <Button
-                    android:id="@+id/conButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="88dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="280dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:layout_marginBottom="0dp"
-                    android:background="@drawable/button_normal"
-                    android:text="Contacts"
-                    android:textColor="@color/white"
-                    android:textSize="13sp" />
-
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-
-    </LinearLayout>
-
-
+    </ScrollView>
 </RelativeLayout>

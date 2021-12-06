@@ -61,8 +61,8 @@ class FAQ : AppCompatActivity() {
             uiThread {
                 //Panel 1.
                 title1.text=titleList[0]
-                question1.text=questionList[0]
-                answer1.text=answerList[0]
+                //question1.text=questionList[0]
+                //answer1.text=answerList[0]
                 //question2.text=questionList[1]
                 //answer2.text=answerList[1]
             }//UiThread.
@@ -88,5 +88,12 @@ class FAQ : AppCompatActivity() {
             val intent3 = Intent(this, Contacts::class.java)
             startActivity(intent3)
         }//To Contacts.
+
+        //Sends to profile page.
+        val profileBtn = findViewById<Button>(R.id.profileBtn)
+        profileBtn.setOnClickListener{
+            val intent = Intent(this, Profile::class.java)
+            startActivity(intent)
+        }//To Profile.
     }//OnCreate.
 }//FAQ.

@@ -13,9 +13,6 @@ import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.uiThread
 import org.jsoup.Jsoup
 
-    private val handlerAnimation = Handler()
-    private val statusAnimation = false
-
 class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,13 +24,17 @@ class Home : AppCompatActivity() {
 
 
         doAsync {
-            val doc = Jsoup.connect("https://educationusa.state.gov/find-event/").get()
-            val allinfo = doc.getElementsByClass("panel-pane pane-fieldable-panels-pane pane-fpid-219")
+            val doc = Jsoup.connect("https://americancenterjapan.com/event/").get()
+            val allinfo = doc.getElementsByClass("clearfix")
+            //System.out.println(allinfo)
 
             //Allinfo loop, contains nested for loops.
             for(i in allinfo) {
-                val image = i.getElementsByTag("img").attr("src")
+                val image = i.getElementsByTag("img")
+                    .attr("src")
+                //System.out.println(image)
                 imagelist.add(image)
+
             }//Allinfo.
             uiThread {
                 Glide.with(this@Home).load(imagelist[0]).into(image1)
@@ -61,5 +62,12 @@ class Home : AppCompatActivity() {
             val intent3 = Intent(this, Contacts::class.java)
             startActivity(intent3)
         }//To Contacts.
+
+        //Sends to profile page.
+        val profileBtn = findViewById<Button>(R.id.profileBtn)
+        profileBtn.setOnClickListener{
+            val intent = Intent(this, Profile::class.java)
+            startActivity(intent)
+        }//To Profile.
     }
 }
